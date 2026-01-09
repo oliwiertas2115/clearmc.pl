@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarthBox.pl - Innowacyjny Serwer Minecraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-flex">
+            <div class="logo">DARTH<span>BOX</span></div>
+            <ul class="nav-links">
+                <li><a href="#">Start</a></li>
+                <li><a href="#">Regulamin</a></li>
+                <li><a href="#">Voucher</a></li>
+                <li><a href="#" class="btn-shop">SKLEP</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero-content">
+            <div class="status-badge">
+                <i class="fas fa-signal"></i> GRAJ RAZEM Z <span id="player-count">0</span> OSOBAMI
+            </div>
+            <h1>INNOWACYJNY SERWER MINECRAFT</h1>
+            <p>Dołącz do nowego świata DarthBox i przeżyj niesamowitą przygodę!</p>
+            
+            <div class="hero-btns">
+                <button class="btn-ip" onclick="copyIP()">SKOPIUJ IP: DARTHBOX.PL</button>
+                <a href="#" class="btn-discord"><i class="fab fa-discord"></i> DOŁĄCZ NA DISCORDA</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="modes">
+        <div class="container">
+            <h2>Wybierz najlepszy tryb dla Ciebie</h2>
+            <div class="grid">
+                <div class="mode-card">
+                    <img src="https://via.placeholder.com/300x150" alt="BoxPvP">
+                    <h3>BoxPvP</h3>
+                    <p>Najlepsza arena walki w Polsce.</p>
+                    <a href="#" class="btn-small">Wybierz tryb</a>
+                </div>
+                <div class="mode-card">
+                    <img src="https://via.placeholder.com/300x150" alt="SkyGen">
+                    <h3>SkyGen</h3>
+                    <p>Rozwijaj swoją wyspę i generatory.</p>
+                    <a href="#" class="btn-small">Wybierz tryb</a>
+                </div>
+                <div class="mode-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Wkrótce">
+                    <h3>WKRÓTCE</h3>
+                    <p>Nowy, tajemniczy tryb już niedługo!</p>
+                    <a href="#" class="btn-small disabled">Już niebawem</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DARTHBOX.PL. WSZELKIE PRAWA ZASTRZEŻONE.</p>
+        <p class="disclaimer">Serwer nie jest powiązany z firmą Mojang AB.</p>
+    </footer>
+
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText("darthbox.pl");
+            alert("Skopiowano IP: darthbox.pl");
+        }
+    </script>
+</body>
+</html>
